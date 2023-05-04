@@ -1,4 +1,4 @@
-package br.com.ada.testeautomatizado.util;
+package br.com.ada.testeautomatizado.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
@@ -9,7 +9,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Response <T> {
+public class ResponseDTO<T> {
     String message;
     T detail;
 }
